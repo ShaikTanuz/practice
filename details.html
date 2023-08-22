@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Display Example</title>
+</head>
+<body>
+
+<h1>Name Display Example</h1>
+
+<label for="nameInput">Enter your name:</label>
+<input type="text" id="nameInput">
+<button id="displayButton">Display Name</button>
+<p id="output"></p>
+
+<script>
+    const nameInput = document.getElementById("nameInput");
+    const displayButton = document.getElementById("displayButton");
+    const output = document.getElementById("output");
+
+    displayButton.addEventListener("click", () => {
+        const name = nameInput.value;
+        output.textContent = `Hello, ${name}!`;
+    });
+</script>
+
+</body>
+</html>
